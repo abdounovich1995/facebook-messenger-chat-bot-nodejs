@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "messenger bot nodejs witAI",
   "main": "server.js",
-  "type":"commonjs",
+  "type":"module",
 
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/server.js"
+    "start": "nodemon --exec babel-node src/server.js"
 
   },
   "keywords": [
