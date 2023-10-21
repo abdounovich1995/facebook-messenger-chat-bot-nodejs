@@ -1,13 +1,13 @@
 require("dotenv").config();
 import express from "express";
-import viewEngine from "./config/viewEngine.js";
+import  viewEngineJs from "./config/viewEngine.js";
 import initWebRoute from "./routes/web.js";
-import bodyParser from "body-parser.js";
+import bodyParser from "body-parser";
 
 let app = express();
 
 // config view engine
-viewEngine(app);
+viewEngineJs.viewEngine(app);
 
 //use body-parser to post data
 app.use(bodyParser.json());
